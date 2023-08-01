@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[581],{1990:t=>{t.exports=JSON.parse('{"label":"api","permalink":"/docs/docs/tags/api","allTagsPath":"/docs/docs/tags","count":1,"items":[{"id":"intro","title":"Weather Station API","description":"Authentication and Authorization","permalink":"/docs/docs/intro"}]}')}}]);
