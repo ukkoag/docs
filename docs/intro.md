@@ -94,6 +94,7 @@ Returns all the accessible weather stations for the user.
 [   
     {
         "uuid": "string",
+        "name": "string",
         "latitude": "",
         "longitude": "",
         "installed_timestamp": "ISO format. UTC timezone",
@@ -101,6 +102,7 @@ Returns all the accessible weather stations for the user.
     },
     {
         "uuid": "string",
+        "name": "string",
         "latitude": "",
         "longitude": "",
         "installed_timestamp": "ISO format. UTC timezone",
