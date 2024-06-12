@@ -50,15 +50,11 @@ Please see [URL encoding](https://en.wikipedia.org/wiki/URL_encoding) for detail
 ## Endpoints
 
 ### Get User Token
-`GET https://external.ukkoag.com/v0.1/token?email=abcd@xyz.com&client_id=sdfdsfsdf`
-
-OR
-
-`GET https://external.ukkoag.com/v0.1/token?phone_number=+123&client_id=sdfdsfsdf`
+`GET https://external.ukkoag.com/v0.1/token?email=abcd@xyz.com&phone_number=+123&client_id=sdfdsfsdf`
 
 #### Request
 ```
-User's email OR phone number need to be specified in the query string. The API will return error (`4xx`) if both the email address and phone number are specified in the query string.
+User's email AND phone number both need to be specified in the query string. The API will return error (`4xx`) if any or both of the email address and phone number are not specified in the query string.
 
 Please refer to [Data Format](#data-format) section to how to properly format the data.
 ```
