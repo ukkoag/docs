@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Weather Station API',
+  title: 'Ukko Agro API (ALPHA)',
   tagline: 'Bringing actionable insights to your digitized acres',
   favicon: 'img/favicon.png',
 
@@ -87,11 +87,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'API Docs',
             items: [
               {
                 label: 'Weather Station API',
-                to: '/docs/intro',
+                to: '/docs/cropwise',
                 // to: '/intro',
               },
             ],
