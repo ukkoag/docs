@@ -154,59 +154,13 @@ One advisory per day.
     "advisories": [
         {
             "local_date": "",
-            "urgency": "HIGH/MEDIUM/LOW/DISABLED"
+            "urgency": "HIGH/MEDIUM/LOW/DISABLED",
+            "risk": "float"
         },
         {
             "local_date": "",
-            "urgency": "HIGH/MEDIUM/LOW/DISABLED"
-        }
-    ]
-}
-```
-
-### Get Disease Risk Values
-
-`GET https://external.ukkoag.com/v0.1/disease/risk/<field_id>/<model_name>?start_date=iso_format&end_date=iso_format`
-
-#### Request
-```
-field_id: 
-
-model_name:
-NOT optional. Must be one of the values in `subscribed_models` array the response of get fields endpoint.
-
-start_date:
-OPTIONAL.
-end_date:
-OPTIONAL.
-
-Returns disease risk data between `start_date` and `end_date`. Both ends are INCLUSIVE.
-`end_date` can be nullable. In that case the API will return all the data upto the current date.
-If both `start_date` and `end_date` are absent, then the readings for the most recent
-24 hours will be returned.
-```
-
-#### Response
-```
-`field_id`: ID of the field.
-
-Hourly/daily (depending on the disease model) disease risk. If it's hourly the time will be in UTC timezone. If it's daily then it will be the date in the local timezone.
-
-NOTE: Disease risk values are NOT guaranteed to be immutable or non-nullable. As the risk depends on the weather forecast.
-```
-
-```json
-{
-    "field_id": "string",
-    "model": "",   
-    "disease_risk": [
-        {
-            "local_date": "ISO format. Local timezone. Daily",
-            "value": "float"
-        },
-        {
-            "local_date": "ISO format. Local timezone. Daily",
-            "value": "float"
+            "urgency": "HIGH/MEDIUM/LOW/DISABLED",
+            "risk": "float"
         }
     ]
 }
